@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Bring Smile Cafe | Budh Bazar, Moradabad — Din Ban Jaye!!</title>
+  <meta name="description" content="Bring Smile Cafe, Budh Bazar Moradabad — Fresh coffee, thick shakes, famous kullhad pizza, gourmet burgers, pasta & kathi rolls. Cozy AC seating, free WiFi. Order on WhatsApp +91 96902 15295.">
+  <meta name="theme-color" content="#0B2439">
+  <link rel="icon" href="images/logo-hd.jpg" type="image/jpeg">
+
+  <!-- Google Fonts: Playfair Display (Serif Elegance) & Inter (Modern Clean Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0B2439;
+      --navy-dark: #061521;
+      --navy-light: #133959;
+      --gold: #C9A05A;
+      --gold-light: #E5C387;
+      --gold-dark: #9E7938;
+      --bg-cream: #FAF7F2;
+      --bg-white: #FFFFFF;
+      --card-bg: #FFFFFF;
+      --border-color: rgba(11, 36, 57, 0.08);
+      --border-gold: rgba(201, 160, 90, 0.35);
+      --text-main: #1C2631;
+      --text-muted: #64748B;
+      --text-gold: #B68B42;
+      --veg-green: #16A34A;
+      --nonveg-red: #DC2626;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --shadow-sm: 0 2px 8px rgba(11, 36, 57, 0.06);
+      --shadow-md: 0 8px 24px rgba(11, 36, 57, 0.08);
+      --shadow-lg: 0 16px 40px rgba(11, 36, 57, 0.12);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: 769px) {
+      body { padding-bottom: 0; }
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Announcement Bar */
+    .top-announcement {
+      background: var(--navy);
+      color: #FFF;
+      font-size: 0.78rem;
+      padding: 8px 16px;
+      border-bottom: 1px solid rgba(201, 160, 90, 0.25);
+    }
+    .top-ann-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .top-ann-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-ann-pill {
+      background: rgba(201, 160, 90, 0.2);
+      color: var(--gold-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.7rem;
+    }
+    .top-ann-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .top-ann-link {
+      color: var(--gold-light);
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .top-ann-link:hover { text-decoration: underline; }
+
+    /* Header & Navigation */
+    .header-nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-logo-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .brand-text h1 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.1;
+      letter-spacing: -0.3px;
+    }
+    .brand-text span {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .nav-menu {
+      display: none;
+      align-items: center;
+      gap: 24px;
+    }
+    @media (min-width: 992px) {
+      .nav-menu { display: flex; }
+    }
+    .nav-menu a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover { color: var(--gold-dark); }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cart-btn-nav {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(201, 160, 90, 0.12);
+      border: 1px solid var(--gold);
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .cart-btn-nav:hover {
+      background: var(--gold);
+      color: #FFF;
+    }
+    .cart-badge {
+      background: var(--navy);
+      color: #FFF;
+      font-size: 0.7rem;
+      font-weight: 800;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn-call-nav {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      background: var(--navy);
+      color: #FFF;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 20px;
+      transition: background 0.2s;
+    }
+    @media (min-width: 640px) {
+      .btn-call-nav { display: inline-flex; }
+    }
+    .btn-call-nav:hover { background: var(--navy-light); }
+    .mobile-nav-toggle {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      border-radius: 6px;
+      background: #F1F5F9;
+      cursor: pointer;
+    }
+    @media (min-width: 992px) {
+      .mobile-nav-toggle { display: none; }
+    }
+    .mobile-nav-toggle span {
+      width: 22px;
+      height: 2px;
+      background: var(--navy);
+      border-radius: 2px;
+    }
+
+    /* Mobile Drawer */
+    #mobileDrawer {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(11, 36, 57, 0.98);
+      z-index: 10000;
+      padding: 24px;
+      overflow-y: auto;
+      color: #FFF;
+    }
+    #mobileDrawer.active { display: block; }
+    .drawer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 16px;
+    }
+    .drawer-close {
+      font-size: 2rem;
+      color: var(--gold-light);
+      cursor: pointer;
+    }
+    .drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .drawer-links a {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #FFF;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .drawer-links a:hover { color: var(--gold-light); }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: linear-gradient(rgba(6, 21, 33, 0.78), rgba(6, 21, 33, 0.88)), url('images/gbp-cover.jpg') center/cover no-repeat;
+      color: #FFF;
+      padding: 60px 0 80px;
+      overflow: hidden;
+    }
+    .hero-content {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(201, 160, 90, 0.22);
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #F3E2C3 0%, #C9A05A 60%, #E5C387 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      font-style: italic;
+    }
+    .hero-sub {
+      font-size: clamp(0.98rem, 2vw, 1.15rem);
+      color: #E2E8F0;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 35px;
+    }
+    .h-feat-pill {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #FFF;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.94rem;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 30px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, #C9A05A 0%, #A67C34 100%);
+      color: #FFF;
+      box-shadow: 0 4px 18px rgba(201, 160, 90, 0.4);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(201, 160, 90, 0.6);
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #FFF;
+      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+    }
+    .btn-whatsapp:hover {
+      background: #1EBE5D;
+      transform: translateY(-2px);
+    }
+    .btn-outline-white {
+      background: transparent;
+      border: 1.5px solid rgba(255, 255, 255, 0.6);
+      color: #FFF;
+    }
+    .btn-outline-white:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #FFF;
+    }
+
+    /* Hero Info Bar */
+    .hero-info-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      background: rgba(11, 36, 57, 0.75);
+      border: 1px solid rgba(201, 160, 90, 0.3);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      text-align: left;
+    }
+    .info-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .info-bar-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(201, 160, 90, 0.2);
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .info-bar-text b {
+      display: block;
+      font-size: 0.88rem;
+      color: #FFF;
+      line-height: 1.2;
+    }
+    .info-bar-text span {
+      font-size: 0.75rem;
+      color: #CBD5E1;
+    }
+
+    /* Section Utilities */
+    .sec-block {
+      padding: 70px 0;
+    }
+    .sec-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 40px;
+    }
+    .sec-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .sec-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .sec-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Chef Specials Section */
+    .specials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .special-card {
+      background: #FFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .special-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-gold);
+    }
+    .sp-img-box {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      background: #F1F5F9;
+    }
+    .sp-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .special-card:hover .sp-img-box img {
+      transform: scale(1.06);
+    }
+    .sp-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--navy);
+      color: var(--gold-light);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+    .sp-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .sp-head {
+      margin-bottom: 10px;
+    }
+    .sp-title {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .sp-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .sp-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid #F1F5F9;
+    }
+    .sp-price {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    /* ========================================================
+       THE COMPLETE DIGITAL MENU SECTION
+       ======================================================== */
+    .menu-section {
+      background: #FFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    .menu-toolbar {
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 240px;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      border: 1.5px solid #E2E8F0;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s;
+      background: #FFF;
+    }
+    .search-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201, 160, 90, 0.15);
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94A3B8;
+      font-size: 0.95rem;
+    }
+    .diet-filters {
+      display: flex;
+      gap: 8px;
+    }
+    .diet-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      border: 1.5px solid #E2E8F0;
+      background: #FFF;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .diet-btn.active {
+      background: var(--navy);
+      color: #FFF;
+      border-color: var(--navy);
+    }
+    .diet-btn.veg.active {
+      background: var(--veg-green);
+      border-color: var(--veg-green);
+      color: #FFF;
+    }
+    .diet-btn.nonveg.active {
+      background: var(--nonveg-red);
+      border-color: var(--nonveg-red);
+      color: #FFF;
+    }
+
+    /* Category Navigation Tabs */
+    .cat-tabs-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cat-tabs-scroll::-webkit-scrollbar { display: none; }
+    .cat-tab {
+      background: #F8FAFC;
+      border: 1.5px solid #E2E8F0;
+      color: var(--text-main);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 30px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cat-tab:hover {
+      border-color: var(--gold);
+    }
+    .cat-tab.active {
+      background: var(--navy);
+      color: #FFF;
+      border-color: var(--navy);
+      box-shadow: 0 4px 12px rgba(11, 36, 57, 0.2);
+    }
+    .cat-tab .tab-cnt {
+      font-size: 0.72rem;
+      background: rgba(0, 0, 0, 0.08);
+      padding: 2px 6px;
+      border-radius: 10px;
+    }
+    .cat-tab.active .tab-cnt {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--gold-light);
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .menu-item-card {
+      background: #FFF;
+      border: 1px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s;
+    }
+    .menu-item-card:hover {
+      border-color: var(--gold);
+      box-shadow: var(--shadow-sm);
+    }
+    .mic-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .diet-dot {
+      width: 15px;
+      height: 15px;
+      border: 1.5px solid;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .diet-dot.veg {
+      border-color: var(--veg-green);
+    }
+    .diet-dot.veg::after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--veg-green);
+      border-radius: 50%;
+    }
+    .diet-dot.non {
+      border-color: var(--nonveg-red);
+    }
+    .diet-dot.non::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: 7px solid var(--nonveg-red);
+    }
+    .mic-title-wrap {
+      flex: 1;
+    }
+    .mic-name {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.3;
+      margin-bottom: 2px;
+    }
+    .mic-category {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .mic-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px dashed #F1F5F9;
+      padding-top: 10px;
+      margin-top: 8px;
+    }
+    .mic-price {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--navy);
+      font-family: var(--font-serif);
+    }
+    .add-btn {
+      background: #F8FAFC;
+      border: 1.5px solid var(--gold);
+      color: var(--gold-dark);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .add-btn:hover {
+      background: var(--gold);
+      color: #FFF;
+    }
+    .qty-ctrl {
+      display: inline-flex;
+      align-items: center;
+      background: var(--navy);
+      color: #FFF;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .qty-btn {
+      padding: 5px 10px;
+      color: #FFF;
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+    .qty-num {
+      padding: 0 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    /* Floating Cart Bar (Bottom Screen) */
+    #cartBar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 36, 57, 0.96);
+      backdrop-filter: blur(14px);
+      border-top: 2px solid var(--gold);
+      color: #FFF;
+      padding: 12px 20px;
+      z-index: 1000;
+      display: none;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    }
+    #cartBar.active { display: block; }
+    .cartbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .cb-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cb-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+    .cb-details b {
+      display: block;
+      font-size: 0.95rem;
+      color: #FFF;
+    }
+    .cb-details span {
+      font-size: 0.78rem;
+      color: var(--gold-light);
+    }
+
+    /* Cart Slide-Over Drawer */
+    #cartModal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 10001;
+      backdrop-filter: blur(4px);
+    }
+    #cartModal.open { display: flex; justify-content: flex-end; }
+    .cart-drawer {
+      width: 100%;
+      max-width: 440px;
+      height: 100%;
+      background: #FFF;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -10px 0 30px rgba(0, 0, 0, 0.25);
+      animation: slideInRight 0.3s ease;
+    }
+    @keyframes slideInRight {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+    .cd-header {
+      padding: 20px;
+      background: var(--navy);
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--gold);
+    }
+    .cd-header h3 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+    }
+    .cd-close {
+      color: var(--gold-light);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .cd-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    .cart-empty-state {
+      text-align: center;
+      padding: 50px 20px;
+      color: var(--text-muted);
+    }
+    .cd-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #F1F5F9;
+      gap: 10px;
+    }
+    .cd-item-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      margin-bottom: 2px;
+    }
+    .cd-item-rate {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .cd-order-options {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px dashed #E2E8F0;
+    }
+    .cd-field-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+    .cd-input, .cd-select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #E2E8F0;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.85rem;
+      margin-bottom: 14px;
+      outline: none;
+    }
+    .cd-input:focus, .cd-select:focus {
+      border-color: var(--gold);
+    }
+    .cd-footer {
+      padding: 20px;
+      background: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
+    }
+    .cd-subtotal-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+    .btn-checkout {
+      width: 100%;
+      background: #25D366;
+      color: #FFF;
+      font-size: 0.95rem;
+      font-weight: 800;
+      padding: 14px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+    .btn-checkout:hover { background: #1EBE5D; }
+
+    /* About Section */
+    .about-sec {
+      background: var(--bg-cream);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .about-grid { grid-template-columns: 1.1fr 0.9fr; gap: 60px; }
+    }
+    .about-img-frame {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 3px solid var(--gold);
+    }
+    .about-img-frame img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .about-badge-float {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(11, 36, 57, 0.92);
+      backdrop-filter: blur(8px);
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--gold);
+      color: #FFF;
+    }
+    .about-badge-float b {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--gold-light);
+      font-family: var(--font-serif);
+    }
+    .about-badge-float span {
+      font-size: 0.75rem;
+      color: #CBD5E1;
+    }
+    .about-lead {
+      font-size: 1.05rem;
+      color: var(--text-main);
+      font-weight: 600;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .about-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .perks-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .perk-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* Gallery Section */
+    .gallery-sec {
+      background: #FFF;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    @media (min-width: 768px) {
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    }
+    .gal-card {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      position: relative;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+    .gal-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .gal-card:hover img {
+      transform: scale(1.08);
+    }
+    .gal-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(11, 36, 57, 0.85) 0%, transparent 60%);
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gal-card:hover .gal-overlay { opacity: 1; }
+    .gal-tag {
+      color: #FFF;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    /* Lightbox Modal */
+    #lightboxModal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 10005;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    #lightboxModal.open { display: flex; }
+    .lb-content {
+      max-width: 850px;
+      max-height: 85vh;
+      position: relative;
+    }
+    .lb-img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--gold);
+    }
+    .lb-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: #FFF;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* Google Reviews Section */
+    .reviews-sec {
+      background: var(--navy);
+      color: #FFF;
+    }
+    .reviews-sec .sec-title { color: #FFF; }
+    .reviews-sec .sec-desc { color: #CBD5E1; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .rev-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(201, 160, 90, 0.25);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .rev-stars {
+      color: #F59E0B;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .rev-quote {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #E2E8F0;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+    .rev-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 12px;
+    }
+    .rev-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+    .rev-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .rev-loc {
+      font-size: 0.72rem;
+      color: var(--gold-light);
+    }
+
+    /* Location & Map Section */
+    .location-sec {
+      background: #FFF;
+    }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      overflow: hidden;
+    }
+    @media (min-width: 992px) {
+      .location-grid { grid-template-columns: 1.1fr 0.9fr; padding: 40px; }
+    }
+    .loc-info-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .loc-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .loc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(11, 36, 57, 0.08);
+      border: 1px solid var(--border-color);
+      color: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+    .loc-detail h4 {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 3px;
+    }
+    .loc-detail p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .loc-map-frame {
+      min-height: 300px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      background: #E2E8F0;
+    }
+    .loc-map-frame iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--navy-dark);
+      color: #94A3B8;
+      padding: 60px 0 30px;
+      border-top: 3px solid var(--gold);
+      font-size: 0.88rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: #FFF;
+      margin-bottom: 16px;
+    }
+    .footer-col p {
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links a {
+      color: #CBD5E1;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748B;
+    }
+
+    /* Mobile Sticky Bar */
+    .mobile-bottom-bar {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 62px;
+      background: #FFF;
+      border-top: 1px solid #E2E8F0;
+      z-index: 998;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+    }
+    @media (min-width: 769px) {
+      .mobile-bottom-bar { display: none; }
+    }
+    .mbb-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      border-right: 1px solid #F1F5F9;
+    }
+    .mbb-btn:last-child { border-right: none; }
+    .mbb-btn.primary {
+      background: var(--navy);
+      color: var(--gold-light);
+      font-weight: 800;
+    }
+    .mbb-btn.wa {
+      background: #25D366;
+      color: #FFF;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-ann-inner">
+      <div class="top-ann-left">
+        <span class="top-ann-pill">📍 BUDH BAZAR, MORADABAD</span>
+        <span>Opposite Ajanta Hotel, HDFC Bank 1st Floor · Roz 10 AM – 11 PM</span>
+      </div>
+      <div class="top-ann-right">
+        <a href="tel:+919690215295" class="top-ann-link">📞 +91 96902 15295</a>
+        <a href="https://maps.app.goo.gl/EzsmWJFvDyEMAiVN6" target="_blank" class="top-ann-link">🗺️ Google Maps Directions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="#home" class="brand-box">
+        <img class="brand-logo-img" src="images/logo-hd.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=120&q=80';" alt="Bring Smile Cafe Logo">
+        <div class="brand-text">
+          <h1>BRING SMILE CAFE</h1>
+          <span>Budh Bazar · Moradabad</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#specials">Chef Specials</a>
+        <a href="#menu">Digital Menu</a>
+        <a href="#about">About Cafe</a>
+        <a href="#gallery">Ambience</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Find Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn-nav" onclick="openCart()">
+          <span>🛒 Cart</span>
+          <span class="cart-badge" id="navCartCount">0</span>
+        </button>
+        <a href="tel:+919690215295" class="btn-call-nav">
+          <span>📞 Call Cafe</span>
+        </a>
+        <button class="mobile-nav-toggle" onclick="toggleDrawer()" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer">
+    <div class="drawer-top">
+      <div class="brand-box">
+        <img class="brand-logo-img" src="images/logo-hd.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=120&q=80';" alt="Bring Smile Cafe">
+        <div class="brand-text">
+          <h2 style="font-family:var(--font-serif);font-size:1.15rem;color:#FFF;">BRING SMILE CAFE</h2>
+          <span style="color:var(--gold-light);">Din Ban Jaye!!</span>
+        </div>
+      </div>
+      <span class="drawer-close" onclick="toggleDrawer()">×</span>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" onclick="toggleDrawer()">Home</a>
+      <a href="#specials" onclick="toggleDrawer()">Chef Specials</a>
+      <a href="#menu" onclick="toggleDrawer()">Full Digital Menu (130+ Items)</a>
+      <a href="#about" onclick="toggleDrawer()">About Our Cafe</a>
+      <a href="#gallery" onclick="toggleDrawer()">Ambience Photos</a>
+      <a href="#reviews" onclick="toggleDrawer()">Customer Reviews</a>
+      <a href="#location" onclick="toggleDrawer()">Location &amp; Timings</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <a href="#menu" class="btn btn-gold" style="width:100%;" onclick="toggleDrawer()">📖 View Full Menu</a>
+      <a href="https://wa.me/919690215295?text=Hello%20Bring%20Smile%20Cafe%2C%20mujhe%20order%20karna%20hai" target="_blank" class="btn btn-whatsapp" style="width:100%;">💬 WhatsApp Order</a>
+      <a href="tel:+919690215295" class="btn btn-outline-white" style="width:100%;">📞 Call: +91 96902 15295</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>☕</span> MORADABAD'S COZY CAFE HANGOUT
+        </div>
+        <h1 class="hero-title">
+          Good Food. Great Coffee. <br>
+          <span class="gold-gradient">Din Ban Jaye!!</span>
+        </h1>
+        <p class="hero-sub">
+          Budh Bazar's favourite spot for freshly brewed coffee, thick shakes, sizzling kullhad pizzas, and gourmet burgers in a fully air-conditioned, cheerful ambiance.
+        </p>
+
+        <div class="hero-features">
+          <span class="h-feat-pill">☕ Fresh Brewed Coffee &amp; Tea</span>
+          <span class="h-feat-pill">🍕 Famous Kullhad Pizzas</span>
+          <span class="h-feat-pill">❄️ Full AC Cozy Seating</span>
+          <span class="h-feat-pill">📶 High-Speed Free WiFi</span>
+          <span class="h-feat-pill">⚡ Direct WhatsApp Ordering</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-gold">📖 View Digital Menu (130+ Items)</a>
+          <a href="https://wa.me/919690215295?text=Hello%20Bring%20Smile%20Cafe%2C%20mujhe%20table%20ya%20order%20ke%20bare%20me%20poochna%20hai" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+          <a href="https://maps.app.goo.gl/EzsmWJFvDyEMAiVN6" target="_blank" class="btn btn-outline-white">📍 Get Directions</a>
+        </div>
+
+        <!-- Info Bar Inside Hero -->
+        <div class="hero-info-bar">
+          <div class="info-bar-item">
+            <div class="info-bar-icon">📍</div>
+            <div class="info-bar-text">
+              <b>Budh Bazar, Moradabad</b>
+              <span>Opposite Ajanta Hotel, 1st Floor</span>
+            </div>
+          </div>
+          <div class="info-bar-item">
+            <div class="info-bar-icon">🕒</div>
+            <div class="info-bar-text">
+              <b>10:00 AM – 11:00 PM</b>
+              <span>Open 7 Days a Week</span>
+            </div>
+          </div>
+          <div class="info-bar-item">
+            <div class="info-bar-icon">⭐</div>
+            <div class="info-bar-text">
+              <b>4.8 Star Rated</b>
+              <span>Verified Guests on Google Maps</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef Specials -->
+  <section class="sec-block" id="specials">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-eyebrow">SIGNATURE HIGHLIGHTS</span>
+        <h2 class="sec-title">Chef's Handcrafted Specials</h2>
+        <p class="sec-desc">A few all-time favourites loved by college students, foodies, and families in Moradabad.</p>
+      </div>
+
+      <div class="specials-grid">
+        
+        <!-- 1. Kullhad Pizza -->
+        <div class="special-card">
+          <div class="sp-img-box">
+            <span class="sp-badge">MOST POPULAR</span>
+            <img src="images/cover-pizza.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80';" alt="Veg Kullhad Pizza">
+          </div>
+          <div class="sp-content">
+            <div class="sp-head">
+              <h3 class="sp-title">Veg Kullhad Pizza</h3>
+              <p class="sp-desc">Baked hot inside an earthen clay pot layered with molten cheese, sweet corn, paneer cubes, and tangy marinara.</p>
+            </div>
+            <div class="sp-footer">
+              <span class="sp-price">₹120</span>
+              <button class="add-btn" onclick="addToCart('Veg Kullhad Pizza', 120, 'veg')">+ Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Hazelnut Frappe -->
+        <div class="special-card">
+          <div class="sp-img-box">
+            <span class="sp-badge">REFRESHING</span>
+            <img src="images/cover-shakes.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80';" alt="Hazelnut Cold Coffee">
+          </div>
+          <div class="sp-content">
+            <div class="sp-head">
+              <h3 class="sp-title">Hazelnut Cold Coffee</h3>
+              <p class="sp-desc">Rich double-shot espresso whipped with chilled milk, roasted hazelnut syrup, and a thick creamy foam crown.</p>
+            </div>
+            <div class="sp-footer">
+              <span class="sp-price">₹110</span>
+              <button class="add-btn" onclick="addToCart('Hazelnut Cold Coffee', 110, 'veg')">+ Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Belgian Waffle Sundae -->
+        <div class="special-card">
+          <div class="sp-img-box">
+            <span class="sp-badge">DESSERT HEAVEN</span>
+            <img src="images/cover-sundae.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1568051243851-f9b136146e97?auto=format&fit=crop&w=600&q=80';" alt="Belgian Ice Cream Sundae">
+          </div>
+          <div class="sp-content">
+            <div class="sp-head">
+              <h3 class="sp-title">Belgian Ice Cream Sundae</h3>
+              <p class="sp-desc">Crispy golden Belgian waffle wedges topped with double scoops of vanilla &amp; chocolate gelato with rich chocolate drizzle.</p>
+            </div>
+            <div class="sp-footer">
+              <span class="sp-price">₹250</span>
+              <button class="add-btn" onclick="addToCart('Belgian Ice Cream Sundae', 250, 'veg')">+ Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Peri Peri Cheesy Fries -->
+        <div class="special-card">
+          <div class="sp-img-box">
+            <span class="sp-badge">CRISPY BITES</span>
+            <img src="images/cover-fries.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=600&q=80';" alt="Cheesy Fries">
+          </div>
+          <div class="sp-content">
+            <div class="sp-head">
+              <h3 class="sp-title">Peri Peri French Fries</h3>
+              <p class="sp-desc">Crisp golden french fries seasoned with spicy African peri-peri herbs, served alongside zesty garlic mayo dip.</p>
+            </div>
+            <div class="sp-footer">
+              <span class="sp-price">₹125</span>
+              <button class="add-btn" onclick="addToCart('Peri Peri French Fries', 125, 'veg')">+ Add to Order</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Digital Menu -->
+  <section class="sec-block menu-section" id="menu">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-eyebrow">EXPLORE OUR SPREAD</span>
+        <h2 class="sec-title">The Complete Digital Menu</h2>
+        <p class="sec-desc">Choose from 130+ dishes handcrafted fresh to order. Filter by category, search your cravings, and order directly to our counter via WhatsApp.</p>
+      </div>
+
+      <!-- Menu Search & Filter Toolbar -->
+      <div class="menu-toolbar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="menuSearch" class="search-input" placeholder="Search coffee, pizza, burger, kathi roll, shake..." oninput="handleSearch()">
+        </div>
+
+        <div class="diet-filters">
+          <button class="diet-btn active" onclick="setDietFilter('all', this)">All (136)</button>
+          <button class="diet-btn veg" onclick="setDietFilter('veg', this)">🟢 Veg Only</button>
+          <button class="diet-btn nonveg" onclick="setDietFilter('non', this)">🔴 Non-Veg</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="cat-tabs-scroll" id="catTabsWrap">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Items Grid -->
+      <div class="menu-grid" id="menuItemsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="sec-block about-sec" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-frame">
+          <img src="images/interior-1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80';" alt="Bring Smile Cafe Ambience">
+          <div class="about-badge-float">
+            <b>Cozy &amp; Friendly Vibe</b>
+            <span>Budh Bazar, Moradabad</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="sec-eyebrow">OUR STORY &amp; ETHOS</span>
+          <h2 class="sec-title">Where Good Taste Brings Genuine Smiles</h2>
+          <p class="about-lead">
+            Located right in the bustling heart of Budh Bazar, Opposite Ajanta Hotel, Bring Smile Cafe was born with a simple promise: to serve delicious comfort food and freshly brewed coffee in a peaceful, welcoming atmosphere.
+          </p>
+          <p class="about-text">
+            Whether you want a quick steaming kulhad chai between shopping trips, a romantic evening over cold coffee and pizza, or a quiet corner with high-speed WiFi to work on your laptop, our doors are open 7 days a week.
+          </p>
+
+          <div class="perks-list">
+            <div class="perk-item"><span>❄️</span> Full AC Comfort</div>
+            <div class="perk-item"><span>📶</span> Free Fast WiFi</div>
+            <div class="perk-item"><span>🎂</span> Party Space Available</div>
+            <div class="perk-item"><span>🛵</span> Fast WhatsApp Takeaway</div>
+          </div>
+
+          <a href="https://wa.me/919690215295?text=Hello%20Bring%20Smile%20Cafe%2C%20mujhe%20birthday%20ya%20small%20party%20booking%20ke%20bare%20me%20poochna%20hai" target="_blank" class="btn btn-gold">
+            🎉 Plan Birthday / Small Gathering
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="sec-block gallery-sec" id="gallery">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-eyebrow">MOMENTS &amp; AMBIENCE</span>
+        <h2 class="sec-title">Glimpse Inside Our Cafe</h2>
+        <p class="sec-desc">Click any photo to view in high resolution.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gal-card" onclick="openLightbox('images/interior-1.jpg', 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/interior-1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80';" alt="Cafe Ambience">
+          <div class="gal-overlay"><span class="gal-tag">Cozy Wooden Seating</span></div>
+        </div>
+
+        <div class="gal-card" onclick="openLightbox('images/cover-pizza.jpg', 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/cover-pizza.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80';" alt="Oven Baked Pizza">
+          <div class="gal-overlay"><span class="gal-tag">Oven Baked Pizza</span></div>
+        </div>
+
+        <div class="gal-card" onclick="openLightbox('images/interior-2.jpg', 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/interior-2.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80';" alt="Warm Cafe Lighting">
+          <div class="gal-overlay"><span class="gal-tag">Warm Lighting &amp; Decor</span></div>
+        </div>
+
+        <div class="gal-card" onclick="openLightbox('images/cover-burger.jpg', 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/cover-burger.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80';" alt="Gourmet Burgers">
+          <div class="gal-overlay"><span class="gal-tag">Crispy Double Patties</span></div>
+        </div>
+
+        <div class="gal-card" onclick="openLightbox('images/cover-shakes.jpg', 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/cover-shakes.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80';" alt="Thick Shakes">
+          <div class="gal-overlay"><span class="gal-tag">Belgian Shakes &amp; Frappes</span></div>
+        </div>
+
+        <div class="gal-card" onclick="openLightbox('images/cover-coolers.jpg', 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80')">
+          <img src="images/cover-coolers.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80';" alt="Virgin Mojitos">
+          <div class="gal-overlay"><span class="gal-tag">Chilled Coolers &amp; Mojitos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" onclick="closeLightbox()">
+    <div class="lb-content" onclick="event.stopPropagation()">
+      <span class="lb-close" onclick="closeLightbox()">×</span>
+      <img id="lbImg" class="lb-img" src="" alt="Enlarged View">
+    </div>
+  </div>
+
+  <!-- Google Reviews -->
+  <section class="sec-block reviews-sec" id="reviews">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-eyebrow" style="color:var(--gold-light);">WHAT FOODIES SAY</span>
+        <h2 class="sec-title">Words from Our Happy Guests</h2>
+        <p class="sec-desc">Real reviews from Google Maps visitors who visited Bring Smile Cafe in Budh Bazar.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="rev-card">
+          <div>
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">"The Kullhad Pizza is a masterpiece! So much cheese and perfectly seasoned toppings. Plus the cold coffee was rich and thick. Best hangout place in Budh Bazar."</p>
+          </div>
+          <div class="rev-author">
+            <div class="rev-avatar">AA</div>
+            <div>
+              <div class="rev-name">Aman Agarwal</div>
+              <div class="rev-loc">Local Food Explorer, Moradabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card">
+          <div>
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">"Finding a peaceful AC cafe on 1st floor in crowded Budh Bazar was such a relief! Very polite staff, quick service, and the chocolate waffle sundae was delicious."</p>
+          </div>
+          <div class="rev-author">
+            <div class="rev-avatar">PS</div>
+            <div>
+              <div class="rev-name">Priya Sharma</div>
+              <div class="rev-loc">College Student, Moradabad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card">
+          <div>
+            <div class="rev-stars">★★★★★</div>
+            <p class="rev-quote">"Rates are very reasonable compared to the portion size and quality. Double egg kathi roll and hazelnut frappe is my go-to combo here. Highly recommended!"</p>
+          </div>
+          <div class="rev-author">
+            <div class="rev-avatar">RK</div>
+            <div>
+              <div class="rev-name">Rohit Kumar</div>
+              <div class="rev-loc">Regular Customer, Budh Bazar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:35px;">
+        <a href="https://maps.app.goo.gl/EzsmWJFvDyEMAiVN6" target="_blank" class="btn btn-gold">
+          ⭐ Write a Review on Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Hours -->
+  <section class="sec-block location-sec" id="location">
+    <div class="container">
+      <div class="sec-header">
+        <span class="sec-eyebrow">VISIT US TODAY</span>
+        <h2 class="sec-title">Location, Hours &amp; Contact</h2>
+        <p class="sec-desc">Easy to reach in the heart of Budh Bazar market, Opposite Ajanta Hotel.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="loc-info-card">
+          <div>
+            <div class="loc-item">
+              <div class="loc-icon">📍</div>
+              <div class="loc-detail">
+                <h4>Address &amp; Landmark</h4>
+                <p>Opposite Ajanta Hotel, HDFC Bank ke saamne, 1st Floor, Budh Bazar, Chhatrapati Shivaji Maharaj Marg, Moradabad, Uttar Pradesh — 244001</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">🕒</div>
+              <div class="loc-detail">
+                <h4>Opening Schedule</h4>
+                <p>Monday to Sunday: <b>10:00 AM – 11:00 PM</b> (Open All 7 Days)</p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">📞</div>
+              <div class="loc-detail">
+                <h4>Phone &amp; WhatsApp Ordering</h4>
+                <p>
+                  Primary: <a href="tel:+919690215295" style="color:var(--navy);font-weight:700;">+91 96902 15295</a><br>
+                  Secondary: <a href="tel:+919971970460" style="color:var(--navy);font-weight:700;">+91 99719 70460</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="loc-item">
+              <div class="loc-icon">📸</div>
+              <div class="loc-detail">
+                <h4>Instagram Official</h4>
+                <p><a href="https://www.instagram.com/thechai_fi_moradabad" target="_blank" style="color:var(--gold-dark);font-weight:700;">@thechai_fi_moradabad</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap;">
+            <a href="https://maps.app.goo.gl/EzsmWJFvDyEMAiVN6" target="_blank" class="btn btn-gold">
+              🗺️ Open in Google Maps App
+            </a>
+            <a href="https://wa.me/919690215295?text=Hello%20Bring%20Smile%20Cafe%2C%20mujhe%20location%20samajh%20nahi%20aa%20rahi" target="_blank" class="btn btn-whatsapp">
+              💬 WhatsApp Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="loc-map-frame">
+          <iframe title="Bring Smile Cafe Google Map" src="https://www.google.com/maps?q=Bring+Smile+Cafe,+Budh+Bazar,+Moradabad,+Uttar+Pradesh+244001&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-box" style="margin-bottom:14px;">
+            <img class="brand-logo-img" src="images/logo-hd.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=120&q=80';" alt="Bring Smile Cafe">
+            <div class="brand-text">
+              <h3 style="color:#FFF;font-family:var(--font-serif);font-size:1.2rem;">BRING SMILE CAFE</h3>
+              <span style="color:var(--gold-light);">Din Ban Jaye!!</span>
+            </div>
+          </div>
+          <p>
+            Budh Bazar's beloved cafe retreat serving artisan coffee, thick shakes, kullhad pizzas, and gourmet snacks in a cozy air-conditioned ambiance.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>OUR SPECIALITIES</h4>
+          <ul class="footer-links">
+            <li><a href="#menu" onclick="filterCategoryByKeyword('Kullhad')">Special Kullhad Pizza</a></li>
+            <li><a href="#menu" onclick="filterCategoryByKeyword('Coffee')">Hazelnut Cold Coffee</a></li>
+            <li><a href="#menu" onclick="filterCategoryByKeyword('Shakes')">Belgian Thick Shakes</a></li>
+            <li><a href="#menu" onclick="filterCategoryByKeyword('Burgers')">Gourmet Burgers</a></li>
+            <li><a href="#menu" onclick="filterCategoryByKeyword('Momos')">Steamed &amp; Fried Momos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>VISIT &amp; CONNECT</h4>
+          <p>
+            Opposite Ajanta Hotel, HDFC Bank 1st Floor, Budh Bazar, Moradabad, UP — 244001
+          </p>
+          <p>
+            <b>Hours:</b> 10:00 AM – 11:00 PM (Daily)<br>
+            <b>Phone:</b> +91 96902 15295<br>
+            <b>Instagram:</b> <a href="https://www.instagram.com/thechai_fi_moradabad" target="_blank" style="color:var(--gold-light);">@thechai_fi_moradabad</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bring Smile Cafe. All rights reserved. · Budh Bazar, Moradabad, Uttar Pradesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Cart Bar -->
+  <div id="cartBar">
+    <div class="cartbar-inner">
+      <div class="cb-info">
+        <div class="cb-badge">🛒</div>
+        <div class="cb-details">
+          <b><span id="cbItemCount">0</span> Items in Your Order</b>
+          <span>Total: ₹<span id="cbTotalPrice">0</span></span>
+        </div>
+      </div>
+      <button class="btn btn-gold" onclick="openCart()">
+        View Cart &amp; Order ➔
+      </button>
+    </div>
+  </div>
+
+  <!-- Cart Slide-Over Modal -->
+  <div id="cartModal" onclick="closeCartOnBg(event)">
+    <div class="cart-drawer">
+      <div class="cd-header">
+        <h3>🛒 Your Order</h3>
+        <span class="cd-close" onclick="closeCart()">×</span>
+      </div>
+
+      <div class="cd-body">
+        <div id="cartItemsList">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="cd-order-options" id="cartOptionsWrap" style="display:none;">
+          <label class="cd-field-label">Order Type</label>
+          <select id="orderTypeSelect" class="cd-select" onchange="toggleTableInput()">
+            <option value="Dine-in at Cafe">🍽️ Dine-in (I am sitting at the Cafe)</option>
+            <option value="Takeaway / Self-Pickup">🥡 Takeaway (I will pick up)</option>
+          </select>
+
+          <div id="tableFieldBox">
+            <label class="cd-field-label">Table Number (If known)</label>
+            <input type="text" id="tableNoInput" class="cd-input" placeholder="e.g. Table 3 (or leave blank)">
+          </div>
+
+          <label class="cd-field-label">Your Name (Optional)</label>
+          <input type="text" id="custNameInput" class="cd-input" placeholder="e.g. Rahul Sharma">
+
+          <label class="cd-field-label">Special Cooking Note (Optional)</label>
+          <input type="text" id="custNoteInput" class="cd-input" placeholder="e.g. Less spicy, extra ketchup">
+        </div>
+      </div>
+
+      <div class="cd-footer" id="cartFooterWrap" style="display:none;">
+        <div class="cd-subtotal-row">
+          <span>Total Payable:</span>
+          <span>₹<span id="cartGrandTotal">0</span></span>
+        </div>
+        <button class="btn-checkout" onclick="sendOrderWhatsApp()">
+          <span>💬 Send Order via WhatsApp (+91 96902 15295)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bar -->
+  <div class="mobile-bottom-bar">
+    <a href="tel:+919690215295" class="mbb-btn">
+      <span style="font-size:1.1rem;">📞</span>
+      <span>Call Cafe</span>
+    </a>
+    <a href="#menu" class="mbb-btn primary">
+      <span style="font-size:1.1rem;">📖</span>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/919690215295?text=Hello%20Bring%20Smile%20Cafe%2C%20mujhe%20order%20karna%20hai" target="_blank" class="mbb-btn wa">
+      <span style="font-size:1.1rem;">💬</span>
+      <span>WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    // 1. Full Database of 136 Authentic Menu Items
+    const MENU_DATABASE = [
+ {c:"Hot Beverages — Tea", g:"veg", items:[["Regular Tea",25],["Ginger Tea",35],["Cardamom Tea",35],["Kesar Badam Tea",35],["Chocolate Tea",35],["Green Tea with Lemon",35],["Hot Masala Tea",40]]},
+ {c:"Hot Coffee", g:"veg", items:[["Normal Coffee",60],["Hazelnut Coffee",110],["Butter Coffee",90],["Hot Chocolate",110]]},
+ {c:"Coffee Frappe", g:"veg", items:[["Classic Cold Coffee",110],["Hazelnut Cold Coffee",110],["Chocolate Frappe",130],["Brownie Frappe",140]]},
+ {c:"Ice Tea &amp; Shakes", g:"veg", items:[["Lemon Ice Tea",99],["Peach Ice Tea",110],["Strawberry Shake",110],["Mango Shake",110],["Pineapple Shake",110],["Banana Shake",110],["Kiwi Shake",130],["Brownie Shake",130],["Choco Chip Shake",140],["Chocolate Shake",150],["Oreo Shake",150],["Kit-Kat Shake",150]]},
+ {c:"Ice Coolers &amp; Mojito", g:"veg", items:[["Aam Panna",99],["Kala Khatta",99],["Passion Frost",110],["Masala Lemonade",110],["Mango Banta",110],["Sparkling Sunrise",110],["Virgin Mojito",110],["Ice Crusher — Orange",140],["Ice Crusher — Mango",140],["Ice Crusher — Pineapple",140],["Ice Crusher — Blueberry",160],["Ice Crusher — Kiwi",160],["Green Apple Injector",120],["Water Melon Injector",120],["Blue Orange Injector",120]]},
+ {c:"Ice Cream &amp; Waffles", g:"veg", items:[["Butterscotch Sundae",150],["Brownie Ice Cream Sundae",190],["Belgian Ice Cream Sundae",250],["Vanilla Ice Cream",60],["Chocolate Ice Cream",60],["Chocolate Crunch Waffle",160],["Nutella Waffle",160],["Kit-Kat Waffle",160],["Oreo Waffle",160],["Brownie Over Load",190]]},
+ {c:"Nachos &amp; Garlic Bread", g:"veg", items:[["Nachos White Salsa",120],["Cheese Nachos",150],["Smoky Tandoori Nachos",160],["Mexican Nachos",190],["Cheese Garlic Bread",110],["Peri Peri Garlic Bread",130],["Veg Over Load Bread",150]]},
+ {c:"Chicken Garlic Bread", g:"non", items:[["Cheese Chicken Garlic Bread",150],["Peri Peri Chicken Garlic Bread",150],["Smoky Chicken Garlic Bread",160]]},
+ {c:"Burgers", g:"veg", items:[["Aloo Tikki Burger",75],["Veg Burger",90],["Veg Cheese Burger",110],["Makhni Burger",110],["Veg Crunchy Burger",120],["Tandoori Paneer Burger",135],["Erotic Veg Burger",180]]},
+ {c:"Non-Veg Burgers", g:"non", items:[["Chicken Burger",135],["Chicken Cheese Burger",150],["Chicken Makhani Burger",160],["Spicy Chicken Burger",160]]},
+ {c:"Sandwich (Veg)", g:"veg", items:[["Veg Sandwich",80],["Veg Grill Sandwich",100],["Cheese Grill Sandwich",130],["Cheese Corn Grill Sandwich",130],["Pizza Corn Grill Sandwich",150],["Makhani Cheese Grill Sandwich",150],["Peri Peri Grill Sandwich",170],["Spicy Paneer Grill Sandwich",170]]},
+ {c:"Sandwich (Chicken)", g:"non", items:[["Chicken Cheese Grill Sandwich",150],["Chicken Tandoori Grill Sandwich",170],["Chicken Makhni Grill Sandwich",170],["Chicken Peri Peri Grill Sandwich",170]]},
+ {c:"Fries &amp; Snacks", g:"veg", items:[["French Fries",105],["Peri Peri Masala Fries",120],["Peri Peri Cheesy Fries",150],["Smoky Tandoori Fries",150],["Chilli Potato",155],["Bun Maska",40],["Garlic Bun Maska",50],["Bread Omelet",80]]},
+ {c:"Momos", g:"veg", items:[["Veg Momos Steam (6 pcs)",80],["Veg Momos Fry (6 pcs)",110],["Veg Kurkure Momos (6 pcs)",130],["Pan Fried Shezwan Momos (6 pcs)",150],["Baked Pizza Momos (6 pcs)",190]]},
+ {c:"Maggi", g:"veg", items:[["Plain Maggie",75],["Vegetable Masala Maggie",85],["Cheese Masala Maggie",95],["Tandoori Maggie",105],["Paneer Maggie",120],["Chicken Maggie",130]]},
+ {c:"Pizza &amp; Kullhad Pizza", g:"veg", items:[["Veg Kullhad Pizza",120],["Margarita Pizza",100],["Tomato Pizza",120],["Onion Pizza",170],["Mexican Pizza",180],["Sweet Corn Pizza",180],["Tandoori Paneer Pizza",230],["Makhani Paneer Pizza",230],["Veg Cheesy Pizza",230],["Double Cheese Burst Pizza",275]]},
+ {c:"Kullhad Pizza (Chicken)", g:"non", items:[["Chicken Kullhad Pizza",150]]},
+ {c:"Spring Roll &amp; Chaat", g:"veg", items:[["Spring Roll (2 pcs)",120],["Kurkure Spring Roll (2 pcs)",140],["Corn Chaat",80]]},
+ {c:"Kathi Rolls (Veg)", g:"veg", items:[["Veg Kathi Roll",90],["Veg Cheese Kathi Roll",110],["Paneer Kathi Roll",130],["Spice Paneer Kathi Roll",130],["Smoky Paneer Kathi Roll",130],["Veg Pati Wraps",110],["Paneer Pati Wraps",140]]},
+ {c:"Kathi Rolls (Non-Veg)", g:"non", items:[["Double Egg Roll",130],["Chicken Kathi Roll",150],["Chicken Cheese Kathi Roll",160],["Smoky Chicken Kathi Roll",160],["Spice Chicken Kathi Roll",160]]},
+ {c:"Vada Pao &amp; Pasta", g:"veg", items:[["Bombay Vada Pao",60],["Cheese Vada Pao",80],["Schezwan Vada Pao",90],["Red Sauce Pasta",160],["White Sauce Pasta",180]]},
+ {c:"Pasta (Chicken)", g:"non", items:[["Chicken White Sauce Pasta",220]]}
+];
+
+    // State
+    let cart = {}; // { "Item Name": { price: 110, qty: 1, type: "veg" } }
+    let activeCatIndex = -1; // -1 = All
+    let currentDietFilter = 'all'; // all, veg, non
+    let searchQuery = '';
+
+    // Initialize UI
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCategoryTabs();
+      renderMenuItems();
+      loadCartFromStorage();
+    });
+
+    // Mobile Drawer
+    function toggleDrawer() {
+      const d = document.getElementById('mobileDrawer');
+      d.classList.toggle('active');
+      document.body.style.overflow = d.classList.contains('active') ? 'hidden' : 'auto';
+    }
+
+    // Render Category Filter Tabs
+    function renderCategoryTabs() {
+      const wrap = document.getElementById('catTabsWrap');
+      let totalAllCount = 0;
+      MENU_DATABASE.forEach(cat => totalAllCount += cat.items.length);
+
+      let html = `<button class="cat-tab ${activeCatIndex === -1 ? 'active' : ''}" onclick="selectCategory(-1)">
+        <span>🔥 All Items</span>
+        <span class="tab-cnt">${totalAllCount}</span>
+      </button>`;
+
+      MENU_DATABASE.forEach((cat, idx) => {
+        const cleanName = cat.c.replace('&amp;', '&');
+        html += `<button class="cat-tab ${activeCatIndex === idx ? 'active' : ''}" onclick="selectCategory(${idx})">
+          <span>${cleanName}</span>
+          <span class="tab-cnt">${cat.items.length}</span>
+        </button>`;
+      });
+
+      wrap.innerHTML = html;
+    }
+
+    function selectCategory(idx) {
+      activeCatIndex = idx;
+      renderCategoryTabs();
+      renderMenuItems();
+    }
+
+    function setDietFilter(diet, btn) {
+      document.querySelectorAll('.diet-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentDietFilter = diet;
+      renderMenuItems();
+    }
+
+    function handleSearch() {
+      searchQuery = document.getElementById('menuSearch').value.trim().toLowerCase();
+      renderMenuItems();
+    }
+
+    function filterCategoryByKeyword(kw) {
+      const foundIdx = MENU_DATABASE.findIndex(cat => cat.c.toLowerCase().includes(kw.toLowerCase()));
+      if (foundIdx !== -1) {
+        selectCategory(foundIdx);
+      }
+    }
+
+    // Render Menu Items
+    function renderMenuItems() {
+      const grid = document.getElementById('menuItemsGrid');
+      let matchedItems = [];
+
+      MENU_DATABASE.forEach((cat, catIdx) => {
+        if (activeCatIndex !== -1 && activeCatIndex !== catIdx) return;
+
+        cat.items.forEach(item => {
+          const name = item[0];
+          const price = item[1];
+          const isVeg = cat.g === 'veg';
+
+          // Diet Filter
+          if (currentDietFilter === 'veg' && !isVeg) return;
+          if (currentDietFilter === 'non' && isVeg) return;
+
+          // Search Filter
+          if (searchQuery && !name.toLowerCase().includes(searchQuery) && !cat.c.toLowerCase().includes(searchQuery)) {
+            return;
+          }
+
+          matchedItems.push({
+            name,
+            price,
+            isVeg,
+            category: cat.c.replace('&amp;', '&')
+          });
+        });
+      });
+
+      if (matchedItems.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; color: #64748B;">
+          <div style="font-size: 2.5rem; margin-bottom: 10px;">🍽️</div>
+          <h4 style="font-family:var(--font-serif); font-size: 1.2rem; color: var(--navy); margin-bottom: 6px;">No items match your search</h4>
+          <p style="font-size: 0.88rem;">Try clearing the search box or selecting another category.</p>
+        </div>`;
+        return;
+      }
+
+      let html = '';
+      matchedItems.forEach(item => {
+        const inCartQty = cart[item.name] ? cart[item.name].qty : 0;
+        const dietClass = item.isVeg ? 'veg' : 'non';
+
+        html += `<div class="menu-item-card">
+          <div class="mic-top">
+            <span class="diet-dot ${dietClass}" title="${item.isVeg ? 'Vegetarian' : 'Non-Vegetarian'}"></span>
+            <div class="mic-title-wrap">
+              <div class="mic-name">${item.name}</div>
+              <span class="mic-category">${item.category}</span>
+            </div>
+          </div>
+          <div class="mic-bottom">
+            <span class="mic-price">₹${item.price}</span>
+            <div>
+              ${inCartQty > 0 ? `
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="updateQty('${escapeJs(item.name)}', -1)">-</button>
+                  <span class="qty-num">${inCartQty}</span>
+                  <button class="qty-btn" onclick="updateQty('${escapeJs(item.name)}', 1)">+</button>
+                </div>
+              ` : `
+                <button class="add-btn" onclick="addToCart('${escapeJs(item.name)}', ${item.price}, '${dietClass}')">
+                  + Add
+                </button>
+              `}
+            </div>
+          </div>
+        </div>`;
+      });
+
+      grid.innerHTML = html;
+    }
+
+    function escapeJs(str) {
+      return str.replace(/'/g, "\'");
+    }
+
+    // Cart Logic
+    function addToCart(name, price, type) {
+      if (!cart[name]) {
+        cart[name] = { price, qty: 1, type };
+      } else {
+        cart[name].qty += 1;
+      }
+      saveCartToStorage();
+      updateCartUI();
+      renderMenuItems();
+    }
+
+    function updateQty(name, delta) {
+      if (!cart[name]) return;
+      cart[name].qty += delta;
+      if (cart[name].qty <= 0) {
+        delete cart[name];
+      }
+      saveCartToStorage();
+      updateCartUI();
+      renderMenuItems();
+    }
+
+    function updateCartUI() {
+      let totalQty = 0;
+      let totalPrice = 0;
+      const names = Object.keys(cart);
+
+      names.forEach(name => {
+        totalQty += cart[name].qty;
+        totalPrice += (cart[name].price * cart[name].qty);
+      });
+
+      // Nav Counter
+      document.getElementById('navCartCount').textContent = totalQty;
+
+      // Bottom Bar
+      const cartBar = document.getElementById('cartBar');
+      if (totalQty > 0) {
+        cartBar.classList.add('active');
+        document.getElementById('cbItemCount').textContent = totalQty;
+        document.getElementById('cbTotalPrice').textContent = totalPrice;
+      } else {
+        cartBar.classList.remove('active');
+      }
+
+      // Drawer Content
+      renderCartDrawerItems(names, totalPrice);
+    }
+
+    function renderCartDrawerItems(names, totalPrice) {
+      const container = document.getElementById('cartItemsList');
+      const optWrap = document.getElementById('cartOptionsWrap');
+      const footerWrap = document.getElementById('cartFooterWrap');
+
+      if (names.length === 0) {
+        container.innerHTML = `<div class="cart-empty-state">
+          <div style="font-size:3rem;margin-bottom:12px;">🛒</div>
+          <h4 style="font-family:var(--font-serif);color:var(--navy);font-size:1.15rem;margin-bottom:6px;">Your Cart is Empty</h4>
+          <p style="font-size:0.85rem;">Add delicious items from the menu to start your order!</p>
+        </div>`;
+        optWrap.style.display = 'none';
+        footerWrap.style.display = 'none';
+        return;
+      }
+
+      optWrap.style.display = 'block';
+      footerWrap.style.display = 'block';
+
+      let html = '';
+      names.forEach(name => {
+        const item = cart[name];
+        html += `<div class="cd-item">
+          <div>
+            <div class="cd-item-name">${name}</div>
+            <div class="cd-item-rate">₹${item.price} each · Subtotal: ₹${item.price * item.qty}</div>
+          </div>
+          <div class="qty-ctrl">
+            <button class="qty-btn" onclick="updateQty('${escapeJs(name)}', -1)">-</button>
+            <span class="qty-num">${item.qty}</span>
+            <button class="qty-btn" onclick="updateQty('${escapeJs(name)}', 1)">+</button>
+          </div>
+        </div>`;
+      });
+
+      container.innerHTML = html;
+      document.getElementById('cartGrandTotal').textContent = totalPrice;
+    }
+
+    function openCart() {
+      document.getElementById('cartModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCart() {
+      document.getElementById('cartModal').classList.remove('open');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeCartOnBg(e) {
+      if (e.target.id === 'cartModal') {
+        closeCart();
+      }
+    }
+
+    function toggleTableInput() {
+      const type = document.getElementById('orderTypeSelect').value;
+      const box = document.getElementById('tableFieldBox');
+      box.style.display = type.includes('Dine-in') ? 'block' : 'none';
+    }
+
+    function sendOrderWhatsApp() {
+      const names = Object.keys(cart);
+      if (names.length === 0) return;
+
+      const orderType = document.getElementById('orderTypeSelect').value;
+      const tableNo = document.getElementById('tableNoInput').value.trim();
+      const custName = document.getElementById('custNameInput').value.trim();
+      const custNote = document.getElementById('custNoteInput').value.trim();
+      const grandTotal = document.getElementById('cartGrandTotal').textContent;
+
+      let msg = `*BRING SMILE CAFE — NEW ORDER* 🍽️\n`;
+      msg += `--------------------------------\n`;
+      if (custName) msg += `👤 *Customer:* ${custName}\n`;
+      msg += `📍 *Order Type:* ${orderType}\n`;
+      if (orderType.includes('Dine-in') && tableNo) {
+        msg += `🪑 *Table No:* ${tableNo}\n`;
+      }
+      msg += `--------------------------------\n\n`;
+      msg += `*ORDER ITEMS:*\n`;
+
+      names.forEach((name, i) => {
+        const item = cart[name];
+        msg += `${i + 1}. ${name} x ${item.qty} = ₹${item.price * item.qty}\n`;
+      });
+
+      msg += `\n--------------------------------\n`;
+      msg += `💰 *TOTAL AMOUNT: ₹${grandTotal}*\n`;
+      if (custNote) {
+        msg += `📝 *Cooking Note:* ${custNote}\n`;
+      }
+      msg += `--------------------------------\n`;
+      msg += `Please confirm my order! 🙏`;
+
+      const encodedMsg = encodeURIComponent(msg);
+      window.open(`https://wa.me/919690215295?text=${encodedMsg}`, '_blank');
+    }
+
+    function saveCartToStorage() {
+      try {
+        localStorage.setItem('bsc_cart', JSON.stringify(cart));
+      } catch (e) {}
+    }
+
+    function loadCartFromStorage() {
+      try {
+        const saved = localStorage.getItem('bsc_cart');
+        if (saved) {
+          cart = JSON.parse(saved);
+          updateCartUI();
+          renderMenuItems();
+        }
+      } catch (e) {}
+    }
+
+    // Lightbox
+    function openLightbox(localSrc, fallbackSrc) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lbImg');
+      img.onerror = () => { img.src = fallbackSrc; };
+      img.src = localSrc;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('open');
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</body>
+</html>
